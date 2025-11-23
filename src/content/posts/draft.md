@@ -1,22 +1,51 @@
 ---
-title: Draft Example
-published: 2022-07-01
-tags: [Markdown, Blogging, Demo]
-category: Examples
+title: 玩客云 ARMv7 设备折腾智能家居记录（半完工）
+published: 2025-11-23
+tags: [Markdown, Blogging]
+category: 折腾记录
 draft: true
 ---
 
-# This Article is a Draft
+# 玩客云 ARMv7 设备折腾智能家居记录（半完工）
 
-This article is currently in a draft state and is not published. Therefore, it will not be visible to the general audience. The content is still a work in progress and may require further editing and review.
+> 2025年11月23日，整理家中设备时的突发奇想
 
-When the article is ready for publication, you can update the "draft" field to "false" in the Frontmatter:
+## 背景起因
 
-```markdown
+今天在整理房间时，偶然发现了那台吃灰已久的玩客云设备。看着这个小小的盒子，突然萌生了让它重新发挥余热的想法。
+
+目前家中的智能设备生态相当混乱：
+- **涂鸦智能**插座
+- **米家**空气净化器  
+- **天猫精灵**智能音响
+
+理论上，涂鸦设备可以接入天猫精灵，但由于我使用的是运营商定制版本，始终无法成功添加到天猫精灵中。这个痛点促使我产生了搭建**Home Assistant**（下文简称HA）作为智能家居中转平台的想法。
+
+## 折腾过程
+
+### 系统兼容性挑战
+
+经过多次尝试，发现玩客云（ARMv7架构）无法直接使用最新版的Home Assistant镜像。在各大技术论坛翻阅许久后，终于找到了一个可以正常运行的Docker镜像：
+
+`linuxserver/homeassistant:arm32v7-2023.4.6`
+
+### HACS第三方商店的波折
+
+成功部署HA后，接下来想要安装HACS第三方商店，却遇到了新的问题：官方版HACS并不支持这个版本的HA。
+
+解决方案是使用**HACS极速版1.32.1.1**，虽然安装成功了，但似乎由于国内网络环境的问题，仍然无法正常使用。
+
+最终只能退而求其次，选择了手动安装所需插件的方案。
+
+### 天猫精灵接入困境
+
+为了将HA接入天猫精灵，我尝试使用**hasslife**插件，但始终无法成功建立连接。具体原因尚不明确，可能需要进一步排查网络配置或认证问题。
+
+## 暂时搁置
+
+由于明天还要上学，时间有限，今天的折腾就暂时到这里。虽然还没有完全成功，但至少已经迈出了第一步。
+
+**等我研究成功后再回来更新后续进展！**
+
 ---
-title: Draft Example
-published: 2024-01-11T04:40:26.381Z
-tags: [Markdown, Blogging, Demo]
-category: Examples
-draft: false
----
+*记录于2025.11.23夜*
