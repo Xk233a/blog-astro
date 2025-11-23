@@ -3,7 +3,7 @@ title: 玩客云 ARMv7 设备折腾智能家居记录（半完工）
 published: 2025-11-23
 tags: [Markdown, Blogging]
 category: 折腾记录
-draft: true
+draft: false
 ---
 
 # 玩客云 ARMv7 设备折腾智能家居记录（半完工）
