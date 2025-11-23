@@ -633,7 +633,7 @@ export const umamiConfig = {
 	enabled: true, // 是否显示Umami统计
 	apiKey:
 		import.meta.env.UMAMI_API_KEY ||
-		"maZTXzuDVV/zyhJCtQHcK9e57KS2kQu3BW9TdpWVOP8u9m7WFpAJfox4bkES/L13weviLmsEVKawogy3WU9vTk6lqiTKpYMTSy7w2GFs1wVzp7qfVmA4B1xCaGn4JqrPL1I4cHf1TAjDKsaFmKG5cU/YZDgesCV8C84thGEIo7Vp7i/0UWHtNTKs39RsHKHILGVwyHYnI6y4Ys0oynGCiywjzi+5pxWlzdLjGGOY6m5fmNdTowWgH4Z7zjOBvLOTEfiQkhMydeB3kU05lySwTT43td7kd7n/yIAfmA/lhD5r+3NlEt1JztSOWKwH/9e7MqTHuC8My8rqLoPSVccd9npvtVWTs2MVsU5CR03EXlJle7Q4+v9ld0xR5Xo=", // API密钥优先从环境变量读取，否则使用配置文件中的值
+		"api_maZTXzuDVV/zyhJCtQHcK9e57KS2kQu3BW9TdpWVOP8u9m7WFpAJfox4bkES/L13weviLmsEVKawogy3WU9vTk6lqiTKpYMTSy7w2GFs1wVzp7qfVmA4B1xCaGn4JqrPL1I4cHf1TAjDKsaFmKG5cU/YZDgesCV8C84thGEIo7Vp7i/0UWHtNTKs39RsHKHILGVwyHYnI6y4Ys0oynGCiywjzi+5pxWlzdLjGGOY6m5fmNdTowWgH4Z7zjOBvLOTEfiQkhMydeB3kU05lySwTT43td7kd7n/yIAfmA/lhD5r+3NlEt1JztSOWKwH/9e7MqTHuC8My8rqLoPSVccd9npvtVWTs2MVsU5CR03EXlJle7Q4+v9ld0xR5Xo=", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://umami.imxb.de/", // Umami Cloud API地址
 	scripts: `
 <script defer src="https://umami.imxb.de/script.js" data-website-id="32ed8b69-4efb-43ce-ac1d-1d2efc39d1ad"></script>
